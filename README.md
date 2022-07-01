@@ -1,2 +1,2 @@
-# I learning JavaScrypt
+# I'm learning JavaScrypt
 
