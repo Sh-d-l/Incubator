@@ -1,1 +1,1 @@
-const myList = [["banan", 3], ["kiwi", 2], ["milk",1], ["bread", 2],["potatos", 10]];
+const myList = [["q",1], ["q",1], ["q",1],["q",1],["q",1]];
