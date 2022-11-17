@@ -1,9 +1,13 @@
-// Setup
-function testStrict(val) {
-  if (val === 7) { // Change this line
-    return "Equal";
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
   }
-  return "Not Equal";
+
+  if (val < 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
 }
 
-testStrict(10);
+testLessThan(10);
