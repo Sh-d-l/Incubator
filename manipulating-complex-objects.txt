@@ -1,0 +1,23 @@
+const myMusic = [
+  {
+    "artist": "ssss",
+    "title": "Gitar",
+    "release_year": 122,
+    "formats": [
+      "w",
+      "e"
+    ]
+  },
+  {  
+    "artist": "Billy",
+    "title": "Piano",
+    "release_year": 1972,
+    "formats": [
+      "CD",
+      "8T",
+      "LP",
+      "qqq"
+    ],
+    "gold": true
+  }
+];
