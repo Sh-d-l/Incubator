@@ -1,19 +1,13 @@
-// Setup
-function phoneticLookup(val) {
-  let result = "";
-
-  // Only change code below this line
-  let lookup = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
-    "foxtrot": "Frank"
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
   }
-  result = lookup[val];
-  // Only change code above this line
-  return result;
-}
+};
 
-phoneticLookup("charlie");
+const gloveBoxContents = myStorage.car.inside["glove box"];
