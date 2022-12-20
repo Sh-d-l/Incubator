@@ -1,0 +1,8 @@
+Создайте скрипт, который запрашивает ввод двух чисел (используйте prompt) и после показывает их сумму.
+ function sum() {
+    let a = +prompt("Введите число a", 0);
+    let b = +prompt("Введите число b", 0);
+    let sum = a + b
+    console.log(sum.toFixed(1))
+  }
+  sum()
