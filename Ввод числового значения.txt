@@ -1,0 +1,16 @@
+function readNumber() {
+    let a;
+    while (isNaN(a)) {
+      a = +prompt("Введите число", 0);
+      if (isNaN(a) == true) {
+        console.log("Еще разочек")
+      }
+      else if (a == 0) {
+        console.log("Null")
+      }
+      else {
+        console.log ("Число", a)
+      }
+    }             
+  }
+  readNumber()
