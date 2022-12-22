@@ -1,0 +1,2 @@
+  console.log('I\'m buba')
+  console.log('I\'m  buba'.length)
