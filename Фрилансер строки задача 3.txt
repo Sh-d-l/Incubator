@@ -1,0 +1,2 @@
+let fls;    
+    console.log(fls = 123 + "456")
