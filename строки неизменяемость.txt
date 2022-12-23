@@ -1,0 +1,5 @@
+let buba = 'buba';
+        buba[1] = 'f';
+        console.log(buba)
+        buba = 'f' + buba[1]
+        console.log(buba)
