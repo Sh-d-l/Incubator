@@ -1,0 +1,3 @@
+let buba = 'buba';      
+    console.log(buba.toUpperCase())
+    console.log(buba.toLowerCase())
