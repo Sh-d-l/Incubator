@@ -1,0 +1,9 @@
+let buba = 'Widget with wid';      
+    //console.log(buba.includes('Widget',1));
+    console.log(buba.indexOf('id'));
+    console.log(buba.lastIndexOf('id'));
+    let quqa = "quqaBuqa";
+    console.log(quqa.startsWith("qu"))
+    console.log(quqa.endsWith('qa'))
+    let duda = 'qwerty perty zxcv';
+    console.log(duda.indexOf('perty', 13));
