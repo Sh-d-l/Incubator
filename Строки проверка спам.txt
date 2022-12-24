@@ -1,0 +1,12 @@
+function checkSpam(str) {
+      str = str.toLowerCase();
+      
+      if (str.includes('viagra') || str.includes('XXX'.toLowerCase())) {
+        console.log(true);
+      }      
+      else {
+        console.log(false);
+      }   
+
+    }
+    checkSpam('buy xXx now')
