@@ -1,0 +1,9 @@
+function truncate(str,maxlength) {
+      if (str.length > maxlength) {
+        console.log(str.slice(0,maxlength + 1) + "...")
+      }
+      else {
+        console.log(str)
+      }
+    }
+    truncate("Вот, что", 20);
