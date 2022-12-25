@@ -1,0 +1,2 @@
+let fls = "фрилансер";    
+    console.log(fls.includes('лан',4))
