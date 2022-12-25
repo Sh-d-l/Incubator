@@ -1,0 +1,9 @@
+function shortcut (string) {
+    let arr = ['a','e','i','o','u'];
+    for (let char of arr) {      
+      if (string.includes(char)) {
+        string = string.replace(char,'');
+      }
+    } 
+    console.log(string)
+}
