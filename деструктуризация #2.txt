@@ -1,0 +1,5 @@
+ function func() {
+    return [2025, 12, 31];
+  }
+  let [year, month, day] = func()
+  console.log(year,day)
