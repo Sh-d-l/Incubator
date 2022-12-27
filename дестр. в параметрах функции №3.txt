@@ -1,0 +1,4 @@
+function func([name, surname, dep,position = "junior"]) {
+    console.log(position)
+}
+func( ['John', 'Smit', 'development', "middle"] );
