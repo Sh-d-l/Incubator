@@ -1,0 +1,5 @@
+function func([name,surname,dev,prof,year]) {
+    console.log(year)
+ }
+ func( ['John', 'Smit', 'development', 
+	'programmer', 2000] );
