@@ -1,0 +1,4 @@
+function func([name,surname,info]) {
+    console.log(info)
+}
+func (["John", "Smith", "dev", "prog", 2000])
