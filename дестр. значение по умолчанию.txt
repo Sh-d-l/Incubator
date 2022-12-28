@@ -1,0 +1,7 @@
+ let opt = {
+    color: "blue",
+    width: 400,
+    height: 500,
+ };
+ let {color = 'green', width: w, height: h} = opt;
+ console.log(color)
