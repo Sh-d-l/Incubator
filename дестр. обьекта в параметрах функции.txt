@@ -1,0 +1,4 @@
+ function func({color,width,height}) {
+        console.log(width)
+    }
+    func ({color: "blue", width: 300, height: 500})
