@@ -1,0 +1,9 @@
+let i = 1;
+    let total = 0;
+    while (i < 1001) {
+        i *= 3;
+        console.log(i);
+        total += 1;
+        
+    }
+  console.log("Количество итераций", total)
