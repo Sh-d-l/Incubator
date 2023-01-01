@@ -1,0 +1,6 @@
+ let opt = {
+    //width: 400,
+    height: 500,
+ };
+ let {width: w = 200, height: h} = opt;
+ console.log (w)
