@@ -1,0 +1,12 @@
+function func() {
+	return (new Date).getDate();
+}
+function funcMonth() {
+    return (new Date).getMonth();
+}
+function funcYear() {
+    return (new Date).getYear();
+}
+let arr = [2000,, 12 ];
+let [year = funcYear(), month = funcMonth(), day = func()] = arr;
+console.log(year)
