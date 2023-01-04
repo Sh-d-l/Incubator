@@ -1,0 +1,8 @@
+let str = 'hello';
+let arrVow = ['a', 'e','i','o','u'];
+let total = 0;
+for (let i = 0; i < arrVow.length-1; i++) {
+  if (str.includes(arrVow[i])   ) 
+    total += 1;
+}
+console.log(total)
