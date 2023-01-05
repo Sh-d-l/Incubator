@@ -1,0 +1,19 @@
+function freqSeq(str, sep) {
+let arr = str.split('');
+  let newStr = '';
+  let newArr = arr.reduce ((acc, elem) => {
+    if (acc[elem]) { 
+      acc[elem] += 1;
+    }
+    else {
+      acc[elem] = 1;
+    }
+    return acc;
+  }, {});
+   for (let char in newArr) {
+     newStr += newArr[char];
+     console.log (newStr); 
+}
+}
+     
+freqSeq('hello world', '-') 
