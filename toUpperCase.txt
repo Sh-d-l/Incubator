@@ -1,0 +1,4 @@
+function camelize(str) {
+    console.log(str.split('-').map(elem => elem[0].toUpperCase() + elem.slice(1)).join(''))
+   }
+   camelize('my-short-string')
