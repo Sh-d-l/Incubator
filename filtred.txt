@@ -1,0 +1,6 @@
+function filterRange(arr,a,b) {
+   let filtred = arr.filter(elem => elem >= a && elem <= b);
+   console.log(filtred)
+  }
+
+  filterRange([5, 3, 8, 1], 1, 4)
