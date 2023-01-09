@@ -1,0 +1,24 @@
+let vasya = { name: "Вася", age: 25 };
+    let petya = { name: "Петя", age: 30 };
+    let masha = { name: "Маша", age: 29 };
+
+    let arr = [ vasya, petya, masha ];
+    /*let total = 0;
+    for (let i = 0; i < arr.length;i++) {
+        total += arr[i].age
+    }
+    console.log(total / arr.length)*/
+    /*function getAverageAge(arr) {
+        let total = 0;
+        let newArr = [];
+       arr.forEach((item) => total += item.age);
+        console.log(total / arr.length)
+    }*/
+    
+    function getAverageAge(arr) {             
+    let newArr =  arr.reduce((acc, item) => acc += item.age, 0);
+      console.log(newArr / arr.length)
+    }
+    
+
+    getAverageAge(arr)
