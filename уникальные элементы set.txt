@@ -1,0 +1,7 @@
+let strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", ":-O"];
+    function unique (arr) {
+        let filt = [...new Set (arr)];     
+        console.log(filt)
+    }
+    unique(strings)
