@@ -1,0 +1,46 @@
+function hasSurvived(attackers, defenders){
+  let survivors_att = 0;
+  let survivors_def = 0;
+  let sum_att = attackers.reduce((acc,elem) => acc + elem, 0);
+  console.log(sum_att, "att")
+  let sum_def = defenders.reduce((acc,elem) => acc + elem, 0);
+  console.log(sum_def, "def")
+  for (let i = 0; i < attackers.length; i++) {           
+      if (attackers[i] > defenders[i]) {
+        survivors_att++       
+      } 
+      else if (attackers[i] < defenders[i]) {
+        survivors_def++        
+      }       
+      else if (attackers[i] == null) {
+        survivors_def ++;        
+      } 
+      else if (defenders[i] == null) {
+        survivors_att ++;        
+      }     
+     }    
+     console.log(survivors_att, "survivors_att")
+     console.log(survivors_def, "survivors_def")
+           
+        
+        if (survivors_def > survivors_att) {
+          console.log(true)
+        }
+        else if (survivors_def == survivors_att && sum_def > sum_att) {
+          console.log(true)
+        }
+        else if (survivors_def == survivors_att && sum_def == sum_att) {
+          console.log(true)
+        }
+        else {
+          console.log(false)
+        }
+            
+           
+            
+        
+  }
+  
+
+
+hasSurvived([120,20,3,4], [20, 20,13,4])
