@@ -1,0 +1,9 @@
+let flag = false;
+   let total = 0;
+   let num = prompt("Введи число", 0);
+   for(let i = 0; i <= num; i++) {
+    if(num % i == 0) {
+      total++
+    }    
+   }
+   total == 2 ? console.log("простое") : console.log("не простое")
