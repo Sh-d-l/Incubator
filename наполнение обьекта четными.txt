@@ -1,0 +1,13 @@
+   let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+    let objNew = {};
+    let keys = Object.keys(obj);
+    for (let i in obj) {
+      if (obj[i] % 2 == 0) {
+        objNew[i] = obj[i]
+      }
+
+    }
+    
+    
+    
+    console.log(objNew)
