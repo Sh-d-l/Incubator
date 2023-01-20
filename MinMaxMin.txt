@@ -1,0 +1,16 @@
+function minMinMax(array) {
+         let arrSort = array.sort((a,b) => a - b)         
+         let k = 1;  
+         let uniq = [...new Set (arrSort)];
+         console.log(uniq)
+         for (let i = 1; i < uniq.length - 2; i++) {
+          if (uniq[0] + k == uniq[i]) {
+            k += 1;           
+          }
+          else {
+              console.log ([uniq[0],uniq[0] + k , uniq[uniq.length - 1]]);
+              break;
+          }
+         }
+}
+minMinMax([75, -96, -17,-94,-93,-93,  99, -95, -95,-95]) 
