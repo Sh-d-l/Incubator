@@ -1,9 +1,9 @@
-let arr = [10, 20, 30, 40, 21, 32, 51];
-  let newArr = [];
-  for (let elem of arr) {
-    if(elem.toString()[0] == 1 || elem.toString()[0] == 2) {
-      newArr.push(elem)
-    }
-  }
-  let sum = newArr.reduce((acc,elem) => acc + elem,0)
-  console.log(sum)
+function getSum(arr) {
+	let res = 0;
+	
+	for (let elem of arr) {
+		res += elem;		
+	}
+    return res;
+}
+console.log(getSum([1, 2, 3, 4, 5]));
