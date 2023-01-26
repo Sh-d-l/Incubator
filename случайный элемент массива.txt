@@ -1,0 +1,4 @@
+         function getRandomElemOfArr (arr) {
+                return arr[Math.floor(Math.random() * arr.length - 1)];
+            }
+            console.log(getRandomElemOfArr ([1,2,3,4,5,56]) )
