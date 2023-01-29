@@ -1,0 +1,5 @@
+function getСapitalizeFirstLetter (str)  {
+                let newStr = str.split(" ").map((elem) => elem.slice(0,1).toUpperCase() + elem.slice(1)).join(" ");
+                return newStr;
+            }
+            console.log(getСapitalizeFirstLetter ('vdvdv fsfsf uuuiu bnmm,'))
