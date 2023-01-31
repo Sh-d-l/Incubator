@@ -1,0 +1,14 @@
+function divide (num) {
+        let res = 0;
+        let div = 0;
+        while(true) {
+          
+          num = num / 2;
+          if(num < 10) {
+            return res;
+          }
+          res++;
+        }
+
+       }
+       console.log(divide(100))
