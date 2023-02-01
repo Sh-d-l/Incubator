@@ -1,0 +1,6 @@
+doEnumeration ([1,2,3,4,5], function (arr) {
+    return arr.map((elem) => elem * 2);
+} )
+function doEnumeration (arr, func ) {
+    console.log(func(arr))
+}
