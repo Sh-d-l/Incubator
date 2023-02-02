@@ -1,0 +1,9 @@
+function getNum() {
+    let num = 10;
+    return function () {
+        --num;
+        //console.log(num)
+    }
+}
+
+let func = getNum();
