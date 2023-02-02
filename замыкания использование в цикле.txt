@@ -1,0 +1,17 @@
+function getNum() {
+    let num = 10;
+    return function () {
+        --num;
+        //console.log(num)
+    }
+}
+
+let func = getNum();
+
+for (let i = 10; i >= 0; i--) {
+    func()
+    console.log(i)
+    if (i == 0) {
+        console.log("отсчет закончен")
+    }
+}
