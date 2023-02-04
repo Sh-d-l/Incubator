@@ -1,0 +1,7 @@
+function cube(num) {
+	return num ** 3;
+}
+let r = e(2,cube);
+console.log(r)
+
+console.log(result);
