@@ -1,0 +1,14 @@
+let res = (function () {
+    let num = 1;
+    return function(){
+        while (num < 5) {
+            num++
+            console.log(num)
+        }
+        
+        
+    }
+
+})();
+res()
+res()
