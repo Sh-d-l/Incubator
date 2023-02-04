@@ -1,0 +1,9 @@
+function countPositivesSumNegatives(input) {
+  let sumPositive = 0;
+  let sumNegative = 0;
+  input.forEach((elem) => elem > 0 ? sumPositive += 1 : sumNegative += elem);
+  console.log(!input.length)
+  return !input.length || (sumPositive == 0 && sumNegative == 0) ? [] : [sumPositive, sumNegative ];
+   
+}
+console.log(countPositivesSumNegatives([0,0,0,0,0]))
