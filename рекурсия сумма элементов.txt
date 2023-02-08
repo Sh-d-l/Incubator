@@ -1,0 +1,9 @@
+let arr = [1, 2, 3, 4, 5];
+ function test(arr) {
+        let sum = arr.shift();
+        if (arr.length != 0) {
+            sum += test(arr);
+        }
+        return sum;
+ }
+ console.log(test(arr))
