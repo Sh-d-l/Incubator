@@ -1,0 +1,4 @@
+let arr = [-2, -4,- 7,-100];
+
+let r = arr.some((elem,index) => elem * index > 30);
+console.log(r)
