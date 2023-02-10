@@ -1,0 +1,11 @@
+function getMidAr(...nums) {
+    let sum = 0;
+    let quantity = 0;
+    for (let n of nums) {
+        sum += n;
+        quantity += 1;
+    }
+    return sum / quantity
+
+}
+console.log(getMidAr(1,2,3,4,4,55,6,66))
