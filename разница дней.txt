@@ -1,0 +1,4 @@
+let now  = new Date(); // получаем текущий момент
+let date = new Date(now.getFullYear(), now.getMonth(), 20);
+let date2 = new Date(now.getFullYear(), now.getMonth() + 1, 10)
+console.log((date2-date) / (1000 * 60 * 60 * 24));
