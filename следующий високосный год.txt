@@ -1,0 +1,8 @@
+let date = new Date();
+let last = new Date (date.getFullYear(), 02, 0)
+while(last.getDate() !== 29) {
+   
+    last = new Date (date.getFullYear()+1, 02, 0)
+    
+}
+console.log(last)
