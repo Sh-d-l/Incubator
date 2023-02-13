@@ -1,0 +1,3 @@
+let date = new Date();
+let last = new Date (date.getFullYear(), date.getMonth() + 1, 0)
+console.log(last.getDay())
