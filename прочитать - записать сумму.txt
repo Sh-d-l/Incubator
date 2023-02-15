@@ -1,0 +1,7 @@
+import fs from "fs";
+let f1 = fs.readFileSync('file1.txt', 'utf8');
+let f2 = fs.readFileSync('file2.txt', 'utf8');
+let f3 = fs.readFileSync('file3.txt', 'utf8');
+let f4 = +f1 + +f2 + +f3;
+console.log(f4)
+fs.writeFileSync('file4.txt', f4.toString())
