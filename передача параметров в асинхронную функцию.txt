@@ -1,0 +1,11 @@
+make(3, 2, function(res) {
+	console.log(res); 
+});
+
+function make(num, num2, callback) {
+	setTimeout(function() {
+		let arr = [1, 2, 3, 4, 5];
+
+		callback(arr[num] + arr[num2]);  
+	}, 3000);
+}
