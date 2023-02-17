@@ -1,0 +1,17 @@
+import fs from "fs";
+fs.readFile("readme0.txt", "utf8", (err,data) => {
+    if(!err) {
+        fs.writeFile("readme0.txt", data + "!", (err) => {
+            if(err) {
+                console.log("ошибочка")
+            }
+            else{
+                console.log("записано")
+            }
+           
+        })
+    }
+    else {
+        console.log("Error read file")
+    }
+})
