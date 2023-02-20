@@ -1,0 +1,18 @@
+import fs from "fs";
+
+let arr = ['readme.txt','readme0.txt','readme1.txt', 'readme2.txt','readme3.txt'];
+let files = [];
+
+for (let name of arr) {
+	files.push(fs.promises.readFile(name,'utf8'))
+}
+Promise.all(files).then(data => {
+	console.log(data)
+	let sum = 0;
+	for( let elem of data) {
+		sum += Number(elem)
+	}	
+	console.log(sum)
+	fs.promises.writeFile ('res.txt',String(sum))
+})
+console.log()
