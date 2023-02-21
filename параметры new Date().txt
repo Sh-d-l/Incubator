@@ -1,0 +1,8 @@
+let date = new Date(1982, 10, 10); // установим 
+	//5 ноября 2025 года 
+let day  = date.getDay();
+console.log(day)
+let days = ['вс', 'пн', 'вт', 'ср', 
+	'чт', 'пт', 'сб']; 
+
+console.log(days[day]);
