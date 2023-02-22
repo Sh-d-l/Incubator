@@ -1,0 +1,2 @@
+let num = 100;
+setInterval(() => console.log(num--),5000)
