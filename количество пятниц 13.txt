@@ -1,0 +1,11 @@
+let now  = new Date();
+let year = now.getFullYear();
+
+let count = 0;
+for (let month = 0; month <= 11; month++) {
+    let date = new Date (year,month, 13);
+    console.log(date.getDay())
+    if (date.getDay() == 5) {
+        ++count
+    }
+}
