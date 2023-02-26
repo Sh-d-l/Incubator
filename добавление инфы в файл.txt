@@ -1,0 +1,5 @@
+import fs from "fs";
+let test = setInterval(function() {
+    let text = fs.readFileSync('file1.txt', 'utf8');
+    fs.writeFileSync("file1.txt", text + '!');
+}, 5000)
