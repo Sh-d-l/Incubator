@@ -1,0 +1,6 @@
+function febLastDay (year) {
+    let date = new Date (year, 02, 0);
+    return date.getDate() == 29 ? true : false
+}
+
+console.log(febLastDay(2020));
