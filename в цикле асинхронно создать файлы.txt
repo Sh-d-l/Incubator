@@ -1,0 +1,7 @@
+import fs from "fs";
+for (let data = 0; data < 10; data++) {
+    
+    fs.writeFile('readme' + data +'.txt', data + "", function(err,data) {
+        console.log("функция выполнилась")
+    })
+}
