@@ -1,0 +1,4 @@
+let march = new Date(2000,08,01);
+let jan = new Date(2010,01,15);
+
+console.log(Math.floor((jan - march) / (1000 * 60 * 60 * 24 * 30 * 12)))
