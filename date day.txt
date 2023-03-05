@@ -1,0 +1,5 @@
+let date = new Date();
+function holiday (num) {
+    return num == 6 || num == 0 ? "holiday" : "workday";
+}
+console.log(holiday(date.getDay()))
