@@ -1,0 +1,16 @@
+import fs from "fs/promises";
+async function getSum () {
+	let name = ['q1.txt', 'q2.txt', 'q3.txt', 'q4.txt'];
+	let emptyArr = [];
+	for (let elem of name) {
+		await fs.writeFile(elem, String(Math.random() * 10))
+	}
+	for (let file of name) {	
+		emptyArr.push(await fs.readFile(file,'utf8'))
+	}
+	await Promise.all(emptyArr);
+	let sum = emptyArr.reduce((acc,elem) => acc + +elem, 0);
+	await fs.writeFile('rezzzz.txt', String(sum))
+}
+
+getSum()
