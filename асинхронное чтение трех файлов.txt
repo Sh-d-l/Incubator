@@ -1,0 +1,15 @@
+import fs from "fs";
+fs.readFile("readme0.txt", "utf8", function (err,data) {
+    if(!err) {
+        fs.readFile("readme1.txt", "utf8", function(err,data1) {
+            if(!err) {
+                fs.readFile("readme2.txt", "utf8", function(err,data2) {
+                    if(!err) {
+                        console.log(+data + +data1 + +data2)
+                    }
+                })
+            }
+        })
+    }
+ 
+})
